@@ -1,2 +1,3 @@
 rootProject.name = "TrafficLight"
-include ':app'
+include ':traffic-light-start'
+include ':traffic-light-end'

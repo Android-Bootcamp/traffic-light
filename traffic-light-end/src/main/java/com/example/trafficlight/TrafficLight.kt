@@ -26,6 +26,8 @@ class TrafficLight(context: Context, attrs: AttributeSet): View(context, attrs) 
     private val trafficLightHeight = resources.getDimensionPixelSize(R.dimen.traffic_light_height)
 
     var state = TrafficState.STOP
+        // This is a custom setter for the variable. Calls invalidate() to redraw the View whenever
+        // the state is changed.
         set(state) {
             field = state
             invalidate()
